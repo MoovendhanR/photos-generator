@@ -21,5 +21,5 @@ mongoose.connect(CONNECTION_URL,{useNewUrlParser: true,useUnifiedTopology: true}
 
 mongoose.set("strictQuery",true);
 
-
+ 
 //https://www.mongodb.com/cloud/atlas
