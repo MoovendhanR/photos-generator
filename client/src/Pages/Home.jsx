@@ -51,9 +51,9 @@ const Home = () => {
              }
              <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
                {search ? (
-                <RenderCards data={setSearch} title="No search resul found"/>
+                <RenderCards data={[]} title="No search resul found"/>
                ):(
-                <RenderCards data={allposts} title="No posts found" />
+                <RenderCards data={[]} title="No posts found" />
                )}
              </div>
             </>
