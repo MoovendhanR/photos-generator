@@ -20,6 +20,10 @@ const CreatePost = () => {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
+  const generateImage = () =>{
+    
+  }
+
   const handleSurpriseMe = () => {
     
   };
@@ -80,7 +84,7 @@ const CreatePost = () => {
           </div>
         </div>
 
-        {/* <div className="mt-5 flex gap-5">
+        <div className="mt-5 flex gap-5">
           <button
             type="button"
             onClick={generateImage}
@@ -88,7 +92,7 @@ const CreatePost = () => {
           >
             {generatingImg ? 'Generating...' : 'Generate'}
           </button>
-        </div> */}
+        </div>
 
         {/* <div className="mt-10">
           <p className="mt-2 text-[#666e75] text-[14px]">** Once you have created the image you want, you can share it with others in the community **</p>
