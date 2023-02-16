@@ -21,11 +21,12 @@ const CreatePost = () => {
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const generateImage = () =>{
-    
+
   }
 
   const handleSurpriseMe = () => {
-    
+        const randomPrompt = getRandomPrompt(form.prompt);
+        setForm({ ...form,prompt: randomPrompt})
   };
 
   const handleSubmit = async (e) => {
@@ -94,7 +95,7 @@ const CreatePost = () => {
           </button>
         </div>
 
-        {/* <div className="mt-10">
+        <div className="mt-10">
           <p className="mt-2 text-[#666e75] text-[14px]">** Once you have created the image you want, you can share it with others in the community **</p>
           <button
             type="submit"
@@ -102,7 +103,7 @@ const CreatePost = () => {
           >
             {loading ? 'Sharing...' : 'Share with the Community'}
           </button>
-        </div> */}
+        </div>
       </form>
     </section>
   );
