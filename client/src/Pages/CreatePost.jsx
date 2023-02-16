@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { preview } from '../assets'
 import FormField from '../components/FormField'
+import Loader from '../components/Loader'
 import {getRandomPrompt} from '../utils/index'
 
 const CreatePost = () => {
@@ -56,7 +57,7 @@ const CreatePost = () => {
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          {/* <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
+          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
             { form.photo ? (
               <img
                 src={form.photo}
@@ -76,7 +77,7 @@ const CreatePost = () => {
                 <Loader />
               </div>
             )}
-          </div> */}
+          </div>
         </div>
 
         {/* <div className="mt-5 flex gap-5">
