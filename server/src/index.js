@@ -1,10 +1,15 @@
 const express = require('express');
-const mongoose =require('mongoose');
+const mongoose =require("mongoose");
 const connect = require('./config/db.js');
-
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
+app.use(express.json({limit:"50mb"}));
+app.get("/",async(req, res)=>{
+   res.send("hello world")
+})
 
 const PORT = process.env.port || 5000
 
