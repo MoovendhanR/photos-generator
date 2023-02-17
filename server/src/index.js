@@ -17,7 +17,7 @@ app.use("/api/v1/post",postRoutes)
 app.use("/api/v1/vendhan",vendhanRoutes)
 
 
-const PORT = process.env.port || 5000
+const PORT = process.env.port || 5000;
 
 mongoose.set("strictQuery",true);
 app.listen(PORT,async()=>{
