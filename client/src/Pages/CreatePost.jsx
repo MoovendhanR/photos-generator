@@ -52,7 +52,8 @@ const CreatePost = () => {
   };
 
   const handleSubmit = async (e) => {
-   
+      e.preventDefault();
+      
   };
 
   return (
@@ -68,7 +69,7 @@ const CreatePost = () => {
             labelName="Your Name"
             type="text"
             name="name"
-            placeholder="Ex., Moovendhan"
+            placeholder="Ex., Moovendhan!"
             value={form.name}
             handleChange={handleChange}
           />
