@@ -1,9 +1,9 @@
-#Photos-generator using MERN stack
+## Photos-generator using MERN stack
 
 I developed this Photos generator application within a week using MERN.
 
 
-## 🛠 Tech Stack <br/>
+## 🛠 Tech Stack
 1.ReactJS<br/>
 2.Express<br/>
 3.NodeJs<br/>
